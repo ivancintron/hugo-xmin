@@ -5,13 +5,12 @@ url: "/about/"
 ---
 
 # About Ivan
+I am just a chill guy....
 
-Welcome to my website. I created this site to be a fast, simple, and private place to share my thoughts.
+### Why make a website?
+I am not sure but I want to do something different and I feel that as an alternative to scrolling through social medias that learning to create and maintain my own webspace/domain
+is not only empowering but something that less and less of us know how to do. I want to go from a consumption only type of platform to a truly creative and free arena with my own website.
 
-Following the philosophy of a "minimalist web," this site uses no tracking, no heavy scripts, and no bloat. 
-
-### Why a minimalist site?
-I believe the web should be about information and connection, not flashy distractions. This site is built with Hugo and hosted on GitHub Pages to ensure it stays lightweight and stays under my control.
 
 [Back to the Homepage](/)
 
