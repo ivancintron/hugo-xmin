@@ -2,7 +2,7 @@
 title: Home
 ---
 
-# Ivan Cintron's WebPage
+# Ivan Cintron's Webpage
 
 Welcome to my site. 
 I am working on making a collection of simple webpages where i can host my thoughts, ideas, resources and collaborations!
