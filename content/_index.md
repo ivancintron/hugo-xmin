@@ -4,7 +4,7 @@ title: Home
 
 # Ivan Cintron's WebPage
 
-Welcome to my webpage. 
+Welcome to my site. 
 I am working on making a simple webiste where i can host my thoughts, ideas, resources and collaborations
 I dont really know what this will develop into.
 
