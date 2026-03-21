@@ -15,7 +15,7 @@ main {
   margin: 0 auto;
   padding: 3em 2em;
   line-height: 1.8;
-  text-align: left; /* paragraphs stay readable */
+  text-align: left;
 }
 
 /* 3. Navigation */
@@ -72,7 +72,16 @@ p {
   margin-bottom: 1.5em;
 }
 
-/* 7. Images */
+/* 7. Home page image styling */
+.home-image {
+  width: 300px;
+  max-width: 80%;
+  border-radius: 15px;
+  display: block;
+  margin: 20px auto; /* centers the image */
+}
+
+/* 8. Images */
 img {
   max-width: 100%;
   height: auto;
@@ -85,7 +94,7 @@ main img, article img, .donate img {
   max-width: 250px !important;
 }
 
-/* 8. Footer */
+/* 9. Footer */
 footer {
   margin-top: 50px;
   padding: 20px 0;
@@ -95,7 +104,7 @@ footer {
   color: #888;
 }
 
-/* 9. Code + Tables */
+/* 10. Code + Tables */
 pre, code, blockquote {
   background: #1e1e1e !important;
   border: 1px solid #333;
@@ -115,7 +124,7 @@ th, td {
   text-align: left;
 }
 
-/* 10. Google Form Container (semi-dark card) */
+/* 11. Google Form Container (semi-dark card) */
 .form-container {
   display: flex;
   justify-content: center;
@@ -132,10 +141,10 @@ th, td {
   height: 800px;
   border: none;
   border-radius: 12px;
-  background: #2a2a2a; /* semi-dark to match site */
+  background: #2a2a2a; /* semi-dark background around form */
 }
 
-/* 11. Mobile tweaks */
+/* 12. Mobile tweaks */
 @media (max-width: 768px) {
   main {
     padding: 2em 1.5em;
@@ -146,7 +155,7 @@ th, td {
   }
 }
 
-/* 12. Homepage extra wrappers (fix hugging left) */
+/* 13. Extra wrappers for home page content if needed */
 body > div, body > section, body > article {
   max-width: 850px;
   margin: 0 auto;
