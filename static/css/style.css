@@ -1,7 +1,7 @@
-/* 1. Global Dark Theme - Fills Entire Screen */
+/* 1. Global Dark Theme */
 html, body {
-  background-color: #121212 !important; /* Deep black/gray */
-  color: #e0e0e0 !important;           /* Soft white text */
+  background-color: #121212 !important;
+  color: #e0e0e0 !important;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
   margin: 0;
   padding: 0;
@@ -9,15 +9,15 @@ html, body {
   min-height: 100vh;
 }
 
-/* 2. Main Content Area */
-body {
-  max-width: 1100px; /* Standard wide layout */
+/* 2. Main Content Area (xmin uses <main>) */
+main {
+  max-width: 1100px;
   margin: 0 auto;
   padding: 2em;
   line-height: 1.6;
 }
 
-/* 3. Navigation Buttons (Centered and Uniform) */
+/* 3. Navigation */
 nav {
   text-align: center;
   margin-bottom: 30px;
@@ -25,19 +25,19 @@ nav {
   border-bottom: 1px solid #333;
 }
 
-nav ul {
+.menu {
   padding: 0;
   list-style: none;
 }
 
-nav li {
+.menu li {
   display: inline-block;
   margin: 5px 15px;
 }
 
-nav a {
+.menu a {
   background: #2a2a2a !important;
-  color: #38bdf8 !important; /* Bright blue links */
+  color: #38bdf8 !important;
   padding: 10px 20px;
   border-radius: 8px;
   text-decoration: none;
@@ -45,12 +45,27 @@ nav a {
   transition: all 0.3s ease;
 }
 
-nav a:hover {
+.menu a:hover {
   background: #38bdf8 !important;
   color: #121212 !important;
 }
 
-/* 4. Images & QR Codes */
+/* 4. Links */
+a {
+  color: #38bdf8;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* 5. Headings */
+h1, h2, h3 {
+  color: #ffffff;
+  margin-top: 1.5em;
+}
+
+/* 6. Images */
 img {
   max-width: 100%;
   height: auto;
@@ -59,12 +74,12 @@ img {
   margin: 20px auto;
 }
 
-/* Specifically keeps QR codes/Donation images from getting too big */
+/* Limit donation / QR images */
 main img, article img, .donate img {
-  max-width: 250px !important; 
+  max-width: 250px !important;
 }
 
-/* 5. Footer Styling */
+/* 7. Footer */
 footer {
   margin-top: 50px;
   padding: 20px 0;
@@ -74,7 +89,7 @@ footer {
   color: #888;
 }
 
-/* 6. Code & Tables */
+/* 8. Code + Tables */
 pre, code, blockquote {
   background: #1e1e1e !important;
   border: 1px solid #333;
