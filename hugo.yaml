@@ -32,4 +32,4 @@ markup:
     codeFences: false
   goldmark:
     renderer:
-      unsafe: true 
+      unsafe: true
