@@ -1,172 +1,104 @@
 /* 1. Global Dark Theme */
-html, body {
-  background-color: #121212 !important;
-  color: #e0e0e0 !important;
+body {
+  background: #121212;
+  color: #e0e0e0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
   margin: 0;
   padding: 0;
-  width: 100%;
-  min-height: 100vh;
 }
 
-/* 2. Main Content Area */
-main {
+/* 2. Main content & home page text */
+main, body > article, body > section, body > div {
   max-width: 850px;
   margin: 0 auto;
-  padding: 3em 2em;
-  line-height: 1.8;
-  text-align: left;
+  padding: 2em;
+  line-height: 1.6;
 }
 
-/* 3. Navigation */
-nav {
+/* 3. Headings centered */
+h1, h2, h3 {
   text-align: center;
-  margin-bottom: 30px;
-  padding-bottom: 20px;
-  border-bottom: 1px solid #333;
-}
-
-.menu {
-  padding: 0;
-  list-style: none;
-}
-
-.menu li {
-  display: inline-block;
-  margin: 5px 15px;
-}
-
-.menu a {
-  background: #2a2a2a !important;
-  color: #38bdf8 !important;
-  padding: 10px 20px;
-  border-radius: 8px;
-  text-decoration: none;
-  font-weight: 600;
-  transition: all 0.3s ease;
-}
-
-.menu a:hover {
-  background: #38bdf8 !important;
-  color: #121212 !important;
+  color: #fff;
+  margin-top: 1.5em;
 }
 
 /* 4. Links */
 a {
   color: #38bdf8;
+  text-decoration: none;
 }
-
 a:hover {
   text-decoration: underline;
 }
 
-/* 5. Center all Headings */
-h1, h2, h3 {
-  color: #ffffff;
-  margin-top: 1.5em;
+/* 5. Navigation */
+nav {
   text-align: center;
+  margin-bottom: 2em;
+}
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+nav li {
+  display: inline-block;
+  margin: 0 10px;
+}
+nav a {
+  background: #2a2a2a;
+  color: #38bdf8;
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-weight: 600;
+}
+nav a:hover {
+  background: #38bdf8;
+  color: #121212;
 }
 
-/* 6. Paragraphs */
-p {
-  margin-bottom: 1.5em;
-}
-
-/* 7. Home page content container */
-.home-article {
-  max-width: 850px;
-  margin: 0 auto;
-  padding: 2em; /* prevents hugging left */
-}
-
-/* Home page image - smaller size */
-.home-image {
-  width: 200px;       /* smaller width */
-  max-width: 60%;     /* responsive on small screens */
-  height: auto;
-  border-radius: 15px;
-  display: block;
-  margin: 20px auto;  /* centers the image */
-}
-
-/* 9. General Images */
+/* 6. Images (all images responsive, limited to 300px) */
 img {
-  max-width: 100%;
+  max-width: 300px;    /* limits image size on desktop */
+  width: 100%;         /* scales down on small screens */
   height: auto;
-  border-radius: 12px;
   display: block;
-  margin: 20px auto;
+  margin: 20px auto;   /* centers image */
+  border-radius: 15px;
 }
 
-/* Limit images in main/article/donate sections */
-main img, article img, .donate img {
-  max-width: 250px !important;
-}
-
-/* 10. Footer */
+/* 7. Footer */
 footer {
-  margin-top: 50px;
-  padding: 20px 0;
   text-align: center;
+  margin-top: 3em;
+  padding: 1em 0;
   border-top: 1px solid #333;
-  font-size: 0.9em;
   color: #888;
 }
 
-/* 11. Code + Tables */
-pre, code, blockquote {
-  background: #1e1e1e !important;
-  border: 1px solid #333;
-  padding: 10px;
-  border-radius: 5px;
-}
-
-table {
-  width: 100%;
-  border-collapse: collapse;
-  margin: 20px 0;
-}
-
-th, td {
-  padding: 12px;
-  border-bottom: 1px solid #333;
-  text-align: left;
-}
-
-/* 12. Google Form Container (semi-dark card) */
+/* 8. Google Form */
 .form-container {
-  display: flex;
-  justify-content: center;
-  margin: 40px 0;
-  background: #1e1e1e; /* semi-dark card */
+  background: #1e1e1e;
   padding: 20px;
   border-radius: 16px;
-  box-shadow: 0 0 20px rgba(0,0,0,0.5);
+  margin: 2em 0;
+  display: flex;
+  justify-content: center;
 }
-
 .form-container iframe {
   width: 100%;
   max-width: 700px;
   height: 800px;
   border: none;
   border-radius: 12px;
-  background: #2a2a2a; /* semi-dark background around form */
+  background: #2a2a2a;
 }
 
-/* 13. Mobile tweaks */
+/* 9. Mobile tweaks */
 @media (max-width: 768px) {
-  main {
+  main, body > article, body > section, body > div {
     padding: 2em 1.5em;
   }
-
   .form-container iframe {
     height: 900px;
   }
-}
-
-/* 14. Extra wrappers for home page content if needed */
-body > div, body > section, body > article {
-  max-width: 850px;
-  margin: 0 auto;
-  padding: 2em;
 }
