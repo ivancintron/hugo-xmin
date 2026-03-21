@@ -17,8 +17,9 @@ menu:
 params:
   description: "Personal website of Ivan Cintron."
   footer: "&copy; Ivan Cintron {Year}"
-  # This line sets the Ananke theme to a dark gray/black background
-  background_color_class: "bg-black" 
+  # Force dark background and white text for the whole site
+  body_classes: "bg-near-black white"
+  background_color_class: "bg-black"
 
 markup:
   highlight:
@@ -26,3 +27,4 @@ markup:
   goldmark:
     renderer:
       unsafe: true
+
