@@ -1,6 +1,6 @@
 baseURL: "https://ivancintron.com"
 languageCode: "en-us"
-title: "Ivan Cintrón"
+title: "Ivan Cintron"
 
 menu:
   main:
@@ -14,6 +14,7 @@ menu:
       url: "/stories/"
       weight: 3
     - name: "Contact"
+    # Ensure this points to /contact/ so people can find your form
       url: "/contact/"
       weight: 4
     - name: "Donate"
@@ -21,8 +22,8 @@ menu:
       weight: 5
 
 params:
-  description: "Personal website of Ivan Cintrón."
-  footer: "&copy; Ivan Cintrón {Year}"
+  description: "Personal website of Ivan Cintron."
+  footer: "&copy; Ivan Cintron {Year}"
   body_classes: "bg-near-black white"
   background_color_class: "bg-black"
   custom_css: ["css/custom.css"]
