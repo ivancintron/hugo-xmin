@@ -3,11 +3,12 @@ title: "Home"
 draft: false
 ---
 
-# Ivan Cintron's Webpage
+# Ivan Cintrón's Webpage
 
-Welcome to my site. 
-<img src="/images/shurastei.jpg" alt="My Dog" style="width: 300px; border-radius: 15px; display: block; margin: 20px auto;">
+Welcome to my site.  
 
-I am working on making a collection of simple webpages where i can host monthly stories, information, resources and collaborations!
+![My Dog](/images/shurastei.jpg){.home-image}
 
-THIS SITE IS CURRENTLY A WORK IN PROGRESS....CHECK BACK IN PERIODICALLY TO SEE UPDATES!
+I am working on making a collection of simple webpages where I can host monthly stories, information, resources, and collaborations!
+
+**THIS SITE IS CURRENTLY A WORK IN PROGRESS....CHECK BACK PERIODICALLY TO SEE UPDATES!**
