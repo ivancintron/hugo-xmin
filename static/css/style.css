@@ -1,49 +1,38 @@
-/* Apply to the ENTIRE window, not just the content area */
-html {
-  background-color: #121212 !important;
-}
-
-body {
+/* XMin Style Dark Theme */
+html, body {
   background-color: #121212 !important;
   color: #e0e0e0 !important;
-  margin: 0 auto !important;
-  padding: 2em;
-  line-height: 1.6;
-  width: 100% !important;
-  max-width: 1200px !important; 
-  min-height: 100vh;
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif; /* Classic XMin font */
+  line-height: 1.5;
+  margin: 0 auto;
+  padding: 1em;
+  max-width: 800px; /* XMin is traditionally narrower */
 }
 
-/* Force Headers and Footers to match */
-nav, footer, .menu {
-  background-color: transparent !important;
-  width: 100% !important;
-  text-align: center;
-}
+/* Minimalist Nav (XMin style) */
+nav { border-bottom: 1px solid #444; padding-bottom: 10px; margin-bottom: 20px; }
+nav ul { padding: 0; list-style: none; text-align: center; }
+nav li { display: inline; margin: 0 10px; }
+nav a { color: #38bdf8; text-decoration: none; font-weight: bold; }
 
-/* Uniform Navigation Buttons */
-.menu a, .article-meta {
-  background: #333 !important;
-  color: #38bdf8 !important;
-  padding: 8px 12px;
-  border-radius: 5px;
-  text-decoration: none;
-  display: inline-block;
-  margin: 5px;
-}
-
-/* Ensure images and iframes don't "break" the layout */
-img, iframe {
+/* Uniform Image & QR Sizes */
+img {
   max-width: 100%;
-  border-radius: 8px;
-}
-
-/* FIX: Shrink QR Codes specifically so they aren't massive */
-/* This targets images on your donation page specifically */
-main img, article img {
-  max-width: 250px !important; /* Adjust this number to make QR codes bigger or smaller */
-  height: auto;
+  border-radius: 5px;
   display: block;
-  margin: 1rem auto; /* Centers them */
+  margin: 1em auto;
 }
 
+/* Force QR Codes on Donate page to stay small */
+main img, article img {
+  max-width: 200px !important;
+  height: auto;
+}
+
+footer {
+  border-top: 1px solid #444;
+  margin-top: 50px;
+  padding: 20px 0;
+  text-align: center;
+  font-size: 0.9em;
+}
