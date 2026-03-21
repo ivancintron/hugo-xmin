@@ -7,7 +7,7 @@ draft: false
 
 Welcome to my site.  
 
-![My Dog](/images/shurastei.jpg){.home-image}
+![My Dog](/images/shurastei.jpg)
 
 I am working on making a collection of simple webpages where I can host monthly stories, information, resources, and collaborations!
 
