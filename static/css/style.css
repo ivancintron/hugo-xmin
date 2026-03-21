@@ -187,3 +187,18 @@ main > section, .content > section {
   display: block;
   border-radius: 12px;
 }
+
+/* Reset and center all content inside main/content sections */
+main > section, 
+.content > section {
+  display: flex;
+  flex-direction: column;  /* stack content vertically */
+  align-items: center;     /* horizontally center all content */
+  justify-content: flex-start; /* keep vertical flow natural */
+  text-align: center;      /* ensures headings and paragraphs are centered */
+  transform: none;         /* remove accidental mirroring */
+  direction: ltr;          /* enforce left-to-right text */
+  flex: 1 1 30%;
+  min-width: 250px;
+  margin: 0 auto;
+}
