@@ -11,3 +11,10 @@ I am working on making a collection of simple webpages where i can host my thoug
 I dont really know what else this could be developed into and only time will tell.
 
 THIS SITE IS CURRENTLY A WORK IN PROGRESS....CHECK BACK IN PERIODICALLY TO SEE UPDATES!
+
+
+
+<style>
+  body, html { background-color: #000 !important; color: #fff !important; }
+  a { color: #38bdf8 !important; }
+</style>
