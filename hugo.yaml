@@ -1,11 +1,6 @@
 baseURL: "https://ivancintron.com/"
 languageCode: "en-us"
 title: "Ivan Cintrón"
-theme: "xmin"
-
-module:
-  imports:
-    - path: "github.com/yihui/hugo-xmin"
 
 menu:
   main:
@@ -28,7 +23,6 @@ menu:
 params:
   description: "Personal website of Ivan Cintrón."
   footer: "&copy; Ivan Cintrón {Year}"
-  custom_css: ["css/custom.css"]
 
 markup:
   goldmark:
