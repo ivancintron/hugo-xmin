@@ -1,55 +1,40 @@
-/* Apply dark mode to the entire browser window */
-html, body {
-  background-color: #121212 !important; /* Deep black/gray */
-  color: #e0e0e0 !important;           /* Soft white text */
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  min-height: 100%;
+/* Apply to the ENTIRE window, not just the content area */
+html {
+  background-color: #121212 !important;
 }
 
-/* Content Container - Adjust max-width to fix "boxing" */
 body {
-  max-width: 1200px; /* Increased from 800px to be less "boxed" */
-  margin: auto;
+  background-color: #121212 !important;
+  color: #e0e0e0 !important;
+  margin: 0 auto !important;
   padding: 2em;
   line-height: 1.6;
+  width: 100% !important;
+  /* Adjust this if you want the text content to be wider */
+  max-width: 1200px !important; 
+  min-height: 100vh;
 }
 
-/* Header and Navigation */
-.menu, .article-meta, footer { 
-  text-align: center; 
-  background-color: transparent !important; 
+/* Force Headers and Footers to match */
+nav, footer, .menu {
+  background-color: transparent !important;
+  width: 100% !important;
+  text-align: center;
 }
 
-.menu li { display: inline-block; margin: 0 10px; }
-
+/* Uniform Navigation Buttons */
 .menu a, .article-meta {
-  text-decoration: none;
   background: #333 !important;
-  color: #38bdf8 !important; /* Bright blue for visibility */
+  color: #38bdf8 !important;
   padding: 8px 12px;
   border-radius: 5px;
-  transition: background 0.3s;
+  text-decoration: none;
+  display: inline-block;
+  margin: 5px;
 }
 
-.menu a:hover {
-  background: #444 !important;
-}
-
-/* Code, Tables, and Other Elements */
-pre, code, blockquote {
-  background: #1e1e1e !important;
-  border: 1px solid #444;
-}
-
-table {
-  width: 100%;
-  border-collapse: collapse;
-  background: #1a1a1a !important;
-}
-
-th, td { 
-  padding: 12px; 
-  border-bottom: 1px solid #333; 
+/* Ensure images and iframes don't "break" the layout */
+img, iframe {
+  max-width: 100%;
+  border-radius: 8px;
 }
