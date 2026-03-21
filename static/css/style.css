@@ -117,44 +117,44 @@ footer {
 }
 
 /* ========================
-   8. Sections Layout (No Stack on Mobile)
+   8. Sections Layout (Vertical, Centered)
 ======================== */
 main, .content {
   display: flex;
-  flex-wrap: nowrap;             /* never stack */
-  justify-content: center;       /* center all sections horizontally */
-  gap: 20px;                     /* spacing between sections */
+  flex-direction: column;  /* stack sections vertically */
+  align-items: center;     /* center sections horizontally */
+  gap: 40px;               /* spacing between sections */
   margin: 0 auto;
-  max-width: 1200px;             /* container max width */
+  max-width: 1200px;       /* optional container max width */
 }
 
 /* Each section inside main/content */
 main > section, .content > section {
   display: flex;
-  flex-direction: column;        /* stack content vertically inside section */
-  align-items: center;           /* center headings/images */
+  flex-direction: column;  /* stack content inside each section */
+  align-items: center;     /* center headings/images */
   justify-content: flex-start;
-  text-align: center;            /* headings/paragraphs centered */
-  transform: none;               /* remove accidental mirroring */
-  direction: ltr;                /* enforce LTR text */
-  flex: 1 1 30%;                 /* shrink proportionally */
-  min-width: 200px;              /* prevent too small */
+  text-align: center;      /* headings and paragraphs centered */
+  transform: none;         /* remove accidental mirroring */
+  direction: ltr;          /* enforce left-to-right text */
+  width: 100%;             /* full width of container */
+  max-width: 850px;        /* matches desktop max-width */
   margin: 0 auto;
 }
 
 /* Optional scaling for very small screens */
 @media screen and (max-width: 480px) {
   main > section, .content > section {
-    flex: 1 1 28%;               /* shrink slightly */
+    width: 100%;
   }
   main > section h1, .content > section h1 {
-    font-size: 1.2em;            /* scale down headings */
+    font-size: 1.2em;      /* scale down headings */
   }
   main > section p, .content > section p {
-    font-size: 0.95em;           /* scale down paragraphs */
+    font-size: 0.95em;     /* scale down paragraphs */
   }
   img {
-    max-width: 90%;               /* shrink images proportionally */
+    max-width: 90%;         /* shrink images proportionally */
   }
 }
 
