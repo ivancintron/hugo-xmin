@@ -79,7 +79,7 @@ p {
   padding: 2em; /* prevents hugging left */
 }
 
-/* 8. Home page image */
+/* Home page image - smaller size */
 .home-image {
   width: 300px;       /* original size */
   height: auto;
