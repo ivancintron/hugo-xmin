@@ -7,31 +7,25 @@ body {
   padding: 0;
 }
 
-/* 2. Main content & home page text */
+/* 2. Main content & centered text */
 main, body > article, body > section, body > div {
   max-width: 850px;
   margin: 0 auto;
   padding: 2em;
   line-height: 1.6;
-  text-align: center; /* center everything on home page */
+  text-align: center; /* centers headings and paragraphs */
+}
+main p, main h1, main h2, main h3 {
+  text-align: center;
 }
 
-/* 3. Headings centered */
+/* 3. Headings */
 h1, h2, h3 {
   color: #ffffff;
   margin-top: 1.5em;
 }
 
-/* 4. Links */
-a {
-  color: #38bdf8;
-  text-decoration: none;
-}
-a:hover {
-  text-decoration: underline;
-}
-
-/* 5. Navigation */
+/* 4. Navigation */
 nav {
   text-align: center;
   margin-bottom: 2em;
@@ -56,17 +50,17 @@ nav a:hover {
   color: #121212;
 }
 
-/* 6. Images (responsive and centered) */
+/* 5. Images (responsive, centered) */
 img {
-  max-width: 300px;       /* caps image width on desktop */
-  width: 100%;            /* scales down on mobile */
+  max-width: 300px;
+  width: 100%;
   height: auto;
   display: block;
   margin: 20px auto;
   border-radius: 15px;
 }
 
-/* 7. Footer */
+/* 6. Footer */
 footer {
   text-align: center;
   margin-top: 3em;
@@ -75,56 +69,76 @@ footer {
   color: #888;
 }
 
-/* 8. Google Form (semi-dark uniform styling) */
+/* 7. Google Form container */
 .form-container {
-  background: #1e1e1e;        /* semi-dark card */
+  background: #1e1e1e;
   padding: 20px;
   border-radius: 16px;
   margin: 2em 0;
   display: flex;
   justify-content: center;
-  box-shadow: 0 0 15px rgba(0,0,0,0.5); /* subtle shadow for depth */
+  box-shadow: 0 0 15px rgba(0,0,0,0.5);
+  overflow: hidden;
 }
-
 .form-container iframe {
   width: 100%;
   max-width: 700px;
   height: 800px;
   border: none;
   border-radius: 12px;
-  background: #2a2a2a;         /* behind the iframe to unify color */
-  box-shadow: inset 0 0 0 1000px rgba(30,30,30,0.6); /* overlays semi-dark filter inside iframe area */
+  background: #2a2a2a;
+  box-shadow: inset 0 0 0 1000px rgba(30,30,30,0.6);
 }
 
-/* 9. Tables (for stories or donations) */
-table {
+/* 8. Support table styling */
+.support-table {
   width: 100%;
   border-collapse: collapse;
-  margin: 20px 0;
+  margin: 2em 0;
 }
-th, td {
+.support-table th,
+.support-table td {
   padding: 12px;
   border-bottom: 1px solid #333;
-  text-align: left;
+  text-align: center;
 }
-th {
+.support-table th {
   color: #38bdf8;
 }
 
-/* 10. Code blocks, preformatted text */
-pre, code, blockquote {
-  background: #1e1e1e;
-  border: 1px solid #333;
-  padding: 10px;
-  border-radius: 5px;
+/* Make QR codes square and responsive */
+.support-table img {
+  max-width: 150px;
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  border-radius: 0 !important; /* remove circular corners */
 }
 
-/* 11. Mobile tweaks */
+/* Code inside table cells */
+.support-table code {
+  word-break: break-all;
+  color: #e0e0e0;
+  background: #1e1e1e;
+  padding: 4px 6px;
+  border-radius: 4px;
+  font-family: monospace;
+}
+
+/* 9. Mobile tweaks */
 @media (max-width: 768px) {
   main, body > article, body > section, body > div {
     padding: 1.5em;
   }
   .form-container iframe {
     height: 900px;
+  }
+  .support-table th,
+  .support-table td {
+    font-size: 0.9em;
+  }
+  .support-table img {
+    max-width: 120px;
   }
 }
