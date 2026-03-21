@@ -154,17 +154,17 @@ footer {
 .form-container {
   max-width: 700px;
   margin: 2em auto;
-  padding: 0;
-  border: none;           /* remove extra borders */
-  background: #1e1e1e;    /* neutral container color */
-  border-radius: 12px;
-  box-shadow: none;
+  padding: 0;           /* remove extra padding */
+  border: none;         /* no container border */
+  border-radius: 12px;  /* optional, for soft corners */
+  box-shadow: none;     /* remove shadow */
+  background: transparent; /* <-- remove dark background */
 }
 
 .form-container iframe {
   width: 100%;
   height: 800px;
-  border: 0;              /* remove iframe border */
+  border: 0;            /* no iframe border */
   display: block;
   border-radius: 12px;
 }
