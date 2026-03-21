@@ -69,23 +69,8 @@ footer {
   color: #888;
 }
 
-/* 7. Google Form container */
-.form-container {
-  padding: 0;
-  margin: 2em auto;
-  max-width: 700px;
-  display: flex;
-  justify-content: center;
-}
-.form-container iframe {
-  width: 100%;
-  height: 800px;
-  border: 0;
-  display: block;
-  border-radius: 12px;
-}
 
-/* 8. Support table styling */
+/* 7. Support table styling */
 .support-table {
   width: 100%;
   border-collapse: collapse;
@@ -121,7 +106,7 @@ footer {
   font-family: monospace;
 }
 
-/* 9. Mobile tweaks */
+/* 8. Mobile tweaks */
 @media (max-width: 768px) {
   main, body > article, body > section, body > div {
     padding: 1.5em;
@@ -138,7 +123,7 @@ footer {
   }
 }
 
-/* 10. Home page specific */
+/* 9. Home page specific */
 .home-content, 
 .home-content p, 
 .home-content h1, 
@@ -152,19 +137,18 @@ footer {
 }
 
 .form-container {
-  max-width: 700px;
-  margin: 2em auto;
-  padding: 0;           /* remove extra padding */
-  border: none;         /* no container border */
-  border-radius: 12px;  /* optional, for soft corners */
-  box-shadow: none;     /* remove shadow */
-  background: transparent; /* <-- remove dark background */
+  max-width: 700px;       /* limits width */
+  margin: 2em auto;       /* centers container */
+  padding: 0;             /* no extra padding */
+  border-radius: 12px;    /* optional soft corners */
+  background: transparent; /* let form background show fully */
+  box-shadow: none;       /* remove shadow */
 }
 
 .form-container iframe {
   width: 100%;
-  height: 800px;
-  border: 0;            /* no iframe border */
+  height: 817px;          /* match your embed height */
+  border: 0;
   display: block;
   border-radius: 12px;
 }
