@@ -3,7 +3,7 @@ title: "Home"
 draft: false
 ---
 
-# Ivan Cintrón's Webpage
+# Ivan Cintron's Webpage
 
 Welcome to my site.
 
