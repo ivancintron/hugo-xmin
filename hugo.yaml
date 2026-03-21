@@ -10,19 +10,23 @@ menu:
     - name: "About"
       url: "/about/"
       weight: 2
-    - name: "Stories"  # Add this block
+    - name: "Stories"
       url: "/stories/"
       weight: 3
+    - name: "Contact"
+    # Ensure this points to /contact/ so people can find your form
+      url: "/contact/"
+      weight: 4
     - name: "Donate"
       url: "/donate/"
-      weight: 4
+      weight: 5
 
 params:
   description: "Personal website of Ivan Cintron."
   footer: "&copy; Ivan Cintron {Year}"
   body_classes: "bg-near-black white"
   background_color_class: "bg-black"
-  custom_css: ["css/custom.css"] # Keep this for your dark mode
+  custom_css: ["css/custom.css"]
 
 markup:
   highlight:
@@ -30,4 +34,5 @@ markup:
   goldmark:
     renderer:
       unsafe: true
+
 
