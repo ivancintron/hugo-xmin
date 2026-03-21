@@ -1,72 +1,55 @@
-/* Global Dark Theme */
-body {
-  max-width: 800px;
-  margin: auto;
-  padding: 1em;
-  line-height: 1.5;
-  background-color: #121212 !important; /* Deep black/gray background */
+/* Apply dark mode to the entire browser window */
+html, body {
+  background-color: #121212 !important; /* Deep black/gray */
   color: #e0e0e0 !important;           /* Soft white text */
-}
-
-/* Header and navigation menu */
-.menu { padding: 0; }
-.menu li { display: inline-block; }
-.article-meta, .menu a {
-  text-decoration: none;
-  background: #333 !important;         /* Darker buttons */
-  color: #38bdf8 !important;           /* Bright blue links */
-  padding: 5px;
-  border-radius: 5px;
-}
-.menu, .article-meta, footer { text-align: center; }
-.title { font-size: 1.1em; color: #ffffff; }
-footer a { text-decoration: none; color: #38bdf8; }
-
-hr {
-  border-style: dashed;
-  color: #444;                         /* Darker divider line */
-}
-
-/* Code blocks and inline code */
-pre {
-  border: 1px solid #444;
-  background: #1e1e1e !important;      /* Dark code background */
-  box-shadow: 5px 5px 15px rgba(0,0,0,0.5);
-  padding: 1em;
-  overflow-x: auto;
-}
-code { 
-  background: #2d2d2d !important;      /* Dark inline code */
-  color: #f8f8f2 !important;
-  padding: 2px 4px;
-  border-radius: 3px;
-}
-pre code { background: none !important; }
-
-/* Misc elements */
-img, iframe, video { 
-  max-width: 100%; 
-  border-radius: 8px; 
-}
-main { hyphens: auto; }
-blockquote {
-  background: #1e1e1e !important;
-  border-left: 5px solid #38bdf8;      /* Blue accent for quotes */
-  padding: 3px 1em 3px;
-  color: #bbb;
-}
-
-/* Tables (Important for your Donate page) */
-table {
-  margin: auto;
-  border-top: 1px solid #444;
-  border-bottom: 1px solid #444;
+  margin: 0;
+  padding: 0;
   width: 100%;
+  min-height: 100%;
 }
+
+/* Content Container - Adjust max-width to fix "boxing" */
+body {
+  max-width: 1200px; /* Increased from 800px to be less "boxed" */
+  margin: auto;
+  padding: 2em;
+  line-height: 1.6;
+}
+
+/* Header and Navigation */
+.menu, .article-meta, footer { 
+  text-align: center; 
+  background-color: transparent !important; 
+}
+
+.menu li { display: inline-block; margin: 0 10px; }
+
+.menu a, .article-meta {
+  text-decoration: none;
+  background: #333 !important;
+  color: #38bdf8 !important; /* Bright blue for visibility */
+  padding: 8px 12px;
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+
+.menu a:hover {
+  background: #444 !important;
+}
+
+/* Code, Tables, and Other Elements */
+pre, code, blockquote {
+  background: #1e1e1e !important;
+  border: 1px solid #444;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #1a1a1a !important;
+}
+
 th, td { 
-  padding: 10px; 
+  padding: 12px; 
   border-bottom: 1px solid #333; 
-}
-thead, tfoot, tr:nth-child(even) { 
-  background: #1a1a1a !important;      /* Subtle stripes for rows */
 }
