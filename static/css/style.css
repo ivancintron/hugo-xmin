@@ -10,7 +10,6 @@ body {
   padding: 2em;
   line-height: 1.6;
   width: 100% !important;
-  /* Adjust this if you want the text content to be wider */
   max-width: 1200px !important; 
   min-height: 100vh;
 }
@@ -38,3 +37,13 @@ img, iframe {
   max-width: 100%;
   border-radius: 8px;
 }
+
+/* FIX: Shrink QR Codes specifically so they aren't massive */
+/* This targets images on your donation page specifically */
+main img, article img {
+  max-width: 250px !important; /* Adjust this number to make QR codes bigger or smaller */
+  height: auto;
+  display: block;
+  margin: 1rem auto; /* Centers them */
+}
+
